@@ -53,7 +53,7 @@ Handlebars.registerHelper("ifEquals", function(arg1, arg2, options) { // Use Cor
 (function ($) {
 
 
-	$.getJSON( "https://sessionize.com/api/v2/2py77bzz/view/Speakers",	function(speakers) {
+	$.getJSON( "https://sessionize.com/api/v2/ro5rrlc0/view/speakers",	function(speakers) {
 		var organizers = speakers.filter(function(speaker) {
 			return speaker["isTopSpeaker"] == true; // works for now
 		});					
