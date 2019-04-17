@@ -58,16 +58,7 @@ Handlebars.registerHelper("ifEquals", function(arg1, arg2, options) { // Use Cor
 			return speaker["isTopSpeaker"] == true; // works for now
 		});					
 
-		var keynoteSpeakers = { 						           
-				fullName: "Sanjeev Sharma",
-				bio: null,
-				tagLine: "ABB India Head [KeyNote]",
-				profilePicture: "assets/images/2019/Sanjeev.jpg",  
-				isTopSpeaker: false,
-				links: []
-			};
 		
-		speakers.unshift(keynoteSpeakers);
 
 		var featuredSpeakertemplate = Handlebars.compile($("#featuredSpeakerTemplate").html());
 		speakers = {speakers: speakers};
